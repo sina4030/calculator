@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="sina.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/d65e81eb40.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Sina_Talebi </title>
+</head>
+
+<body >
+
+
+
+<div class="container">
+<div class="calculator">
+<form>
+  <div class="display">
+    <input type="text"  name="display">
+  </div>
+
+
+  <div >
+
+    <button class="x2"  type="button" value="x" onclick="calculatePower(2)" >x<sup>2</sup></button>
+    <input type="button" value="AC" onclick="display.value =' ' " class="operator alt ">
+    <input type="button" value="DE" onclick="display.value =display.value.toString().slice(0,-1) " class="operator alt ">
+    <input type="button" value="%" onclick="display.value +=' %' " class="operator alt ">
+    <input type="button" value="/" onclick="display.value +=' /' " class="operator mnt " >
+  </div>
+
+  <div >
+    <button class="x2"  type="button" value="x" onclick="calculatePower(3)" >x<sup>3</sup></button>
+
+    <input type="button" value="7" onclick="display.value +=' 7' " class="sdt ">
+    <input type="button" value="8" onclick="display.value +=' 8' " class="sdt">
+    <input type="button" value="9" onclick="display.value +=' 9' " class="sdt">
+    <input type="button" value="*"  onclick="display.value +=' *' " class="operator mnt">
+  </div>
+  <div>
+    <button class="x2"  type="button" value="x!" onclick="calculateFactorial()" >x!</button>
+    <input type="button" value="4" onclick="display.value +=' 4' " class="sdt ">
+    <input type="button" value="5" onclick="display.value +=' 5' " class="sdt">
+    <input type="button" value="6" onclick="display.value +=' 6' " class="sdt">
+    <input type="button" value="-" onclick="display.value +=' -' " class="operator mnt">
+  </div>
+  <div >
+
+    <input type="button" value="." onclick="display.value +=' .' " class="sdt ">
+
+    <input type="button" value="1" onclick="display.value +=' 1' " class="sdt ">
+    <input type="button" value="2" onclick="display.value +=' 2' " class="sdt">
+    <input type="button" value="3" onclick="display.value +=' 3' " class="sdt">
+    <input type="button" value="+" onclick="display.value +=' +' " class="operator mnt">
+  </div>
+  <div >
+    <input type="button" value="00" onclick="display.value +=' 00'" class="snt " >
+    <input type="button" value="0" onclick="display.value +=' 0' ">
+    <input type="button" value="=" class="equal operator mnt" onclick="display.value =eval(display.value) "  >
+
+  </div>
+
+
+
+
+</form>
+</div>
+</div>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script type="text/javascript" src="sinar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script src="https://kit.fontawesome.com/d65e81eb40.js" crossorigin="anonymous"></script> -->
+
+</html>
